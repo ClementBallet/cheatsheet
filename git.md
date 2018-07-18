@@ -98,6 +98,4 @@
 
 |Description|Commande|
 |-----------|--------|
-|Un fichier texte nommé `.gitignore` permet d'éviter le suivi de version accidentel pour les fichiers et chemins correspondant aux patterns spécifiés|`\*.log
-build/
-temp-\*`
+|Un fichier texte nommé `.gitignore` permet d'éviter le suivi de version accidentel pour les fichiers et chemins correspondant aux patterns spécifiés|`\*.log build/ temp-\*`|
