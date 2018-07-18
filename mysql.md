@@ -75,8 +75,8 @@ Outils et logiciels :
 |Description|Commande|
 |-----------|--------|
 |Effacer des enregistrements|`DELETE FROM [table] WHERE [column] = [value];`|
-|Effacer tous les enregistrements d'une table sans effacer la table|`DELETE FROM [table];`|
-|Effacer tous les enregistrements d'une table|`TRUNCATE TABLE [table];`|
+|Effacer tous les enregistrements d'une table (pas de remise à zéro de l'auto-incrémentation)|`DELETE FROM [table];`|
+|Effacer tous les enregistrements d'une table (remise à zéro de l'auto-incrémentation)|`TRUNCATE TABLE [table];`|
 |Supprimer les colonnes d'une table|`ALTER TABLE [table] DROP COLUMN [column];`|
 |Supprimer une table|`DROP TABLE [table];`|
 |Supprimer une base de données|`DROP DATABASE [database];`|
