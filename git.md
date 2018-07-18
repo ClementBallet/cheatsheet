@@ -18,3 +18,16 @@
 |Définir le nom que vous voulez associer à tous vos commits|`git config --global user.name "[nom]"`|
 |Définir l'email que vous voulez associer à tous vos commit|`git config --global user.email "[adresse email]"`|
 |Activer la colorisation de la sortie en ligne de commande|`git config --global color.ui auto`|
+
+#### Créer un dépôt
+
+|Description|Commande|
+|-----------|--------|
+|Crée un dépôt local à partir du nom spécifié|`git init [nom-du-projet]`|
+|Télécharge un projet et tout son historique de versions|`git clone [url]`|
+
+#### Faire des commits
+
+|Description|Commande|
+|-----------|--------|
+
