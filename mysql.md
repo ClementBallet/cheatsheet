@@ -18,20 +18,11 @@ Outils et logiciels :
 
 ### Accéder à la base de données
 
-Accéder au gestionnaire de base de données
-`mysql -u [username] -p;` (le mot de passe sera demandé)
-
-Voir la liste des bases de données
-`show databases;`
-
-Accéder directement à une base de données
-`mysql -u [username] -p [database]` (le mot de passe sera demandé)
-
-Créer une nouvelle base de données
-`create database [database];`
-
-Utiliser une base de données
-`use [database];`
-
-Savoir quelle base de données on utilise actuellement
-`select database();`
+|Description|Commande|
+|-----------|--------|
+|Accéder au gestionnaire de base de données|`mysql -u [username] -p;`|
+|Afficher la liste des bases de données|`show databases;`|
+|Accéder directement à une base de données| `mysql -u [username] -p [database]`|
+|Créer une nouvelle base de données|`create database [database];`|
+|Utiliser une base de données|`use [database];`|
+|Savoir sur quelle base de données on est|`select database();`|
