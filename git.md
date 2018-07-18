@@ -83,4 +83,12 @@
 
 |Description|Commande|
 |-----------|--------|
-|
+|Afficher l'historique des versions pour la branche courante|`git log`|
+|Afficher l'historique des versions pour la branche courante en 1 ligne|`git log --oneline`|
+|Afficher l'historique des versions pour la branche courante en 1 ligne avec du SHA-1|`git log --format=oneline`|
+|Afficher l'historique des versions pour la branche courante en 1 ligne pour les 3 derniers commits|`git log --oneline -3`|
+|Afficher l'historique des versions, y compris les actions de renommage, pour le fichier spécifié|`git log --follow [fichier]`|
+|Afficher l'historique des versions selon des paramètres|`git log --author="Sven"`, `git log --grep="Message"`, `git log --until=2013-01-01`, `git log --since=2013-01-01`|
+|Afficher les différences de contenu entre deux branches|`git diff [premiere-branche]...[deuxieme-branche]`|
+|Afficher les modifications de métadonnées et de contenu inclues dans le commit spécifié|`git show [commit]`|
+
