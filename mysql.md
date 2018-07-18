@@ -27,7 +27,7 @@ Outils et logiciels :
 |Utiliser une base de données|`use [database];`|
 |Savoir sur quelle base de données on est|`select database();`|
 |Lister les tables|`show tables;`|
-|Afficher la structure de la table|`describe [table];`|
+|Afficher la structure de la table|`desc [table];` ou `describe [table]`|
 |Lister les index d'une table|`show index from [table];`|
 |Exporter une base de données (plus d'infos [ici](http://stackoverflow.com/a/21091197/1815847))|`mysqldump -u [username] -p [database] > db_backup.sql`|
 |Importer une base de données (plus d'infos [ici](http://stackoverflow.com/a/21091197/1815847))|`mysql -u [username] -p -h localhost [database] < db_backup.sql`|
