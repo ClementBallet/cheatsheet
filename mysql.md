@@ -48,7 +48,7 @@ Outils et logiciels :
 |Créer une nouvelle table avec des colonnes|`CREATE TABLE [table] ([column] VARCHAR(120), [another-column] DATETIME);`|
 |Ajouter une colonne à une table existante|`ALTER TABLE [table] ADD COLUMN [column] VARCHAR(120);`|
 |Ajouter une colonne avec un ID unique auto-incrémenté|`ALTER TABLE [table] ADD COLUMN [column] int NOT NULL AUTO_INCREMENT PRIMARY KEY;`|
-|Insérer un enregistrement|`INSERT INTO [table] ([column], [column]) VALUES ('[value]', [value]');`|
+|Insérer un enregistrement|`INSERT INTO [table] ([column], [column]) VALUES ('[value]', '[value]');`|
 |Fonction MySQL pour ajouter la date et l'heure dans l'enregistrement|`NOW()`|
 
 ### Manipuler la base de données
