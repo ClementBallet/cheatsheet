@@ -42,4 +42,10 @@
 |Supprimer le fichier du système de suivi de version mais le préserve localement|`git rm --cached [fichier]`| 
 |Renommer le fichier et préparer le changement pour un commit |`git mv [fichier-nom] [fichier-nouveau-nom]`|
 
+#### Corriger des erreurs et gérer l'historique des corrections
 
+|Description|Commande|
+|-----------|--------|
+|Annuler tous les commits après `[commit]`, en conservant les modifications localement|`git reset [commit]`|
+|Supprimer tout l'historique et les modifications effectuées après le commit spécifié|`git reset --hard [commit]`|
+|Revenir à un commit précis|`git revert [id-du-commit]`|
