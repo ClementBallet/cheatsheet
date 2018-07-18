@@ -94,3 +94,10 @@
 |Afficher les différences de contenu entre deux branches|`git diff [premiere-branche]...[deuxieme-branche]`|
 |Afficher les modifications de métadonnées et de contenu inclues dans le commit spécifié|`git show [commit]`|
 
+#### Exclure des fichiers et chemins temporaires
+
+|Description|Commande|
+|-----------|--------|
+|Un fichier texte nommé `.gitignore` permet d'éviter le suivi de version accidentel pour les fichiers et chemins correspondant aux patterns spécifiés|`\*.log
+build/
+temp-\*`
