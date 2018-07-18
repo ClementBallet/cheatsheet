@@ -48,4 +48,4 @@
 |-----------|--------|
 |Annuler tous les commits après `[commit]`, en conservant les modifications localement|`git reset [commit]`|
 |Supprimer tout l'historique et les modifications effectuées après le commit spécifié|`git reset --hard [commit]`|
-|Revenir à un commit précis|`git revert [id-du-commit]`|
+|Revenir à un commit précis|`git revert [commit]`|
