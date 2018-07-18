@@ -49,17 +49,10 @@ Outils et logiciels :
 |Sélectionner une partie des enregistrements|`SELECT [column], [another-column] FROM [table];`|
 |Compter le nombre d'enreegistrements|`SELECT COUNT([column]) FROM [table];`|
 |Sélectionner, compter et regrouper des enregistrements|`SELECT *, (SELECT COUNT([column]) FROM [table]) AS count FROM [table] GROUP BY [column];`|
-
-Explain records: `EXPLAIN SELECT * FROM [table];`
-
-Selecting specific records: `SELECT * FROM [table] WHERE [column] = [value];` (Selectors: `<`, `>`, `!=`; combine multiple selectors with `AND`, `OR`)
-
-Select records containing `[value]`: `SELECT * FROM [table] WHERE [column] LIKE '%[value]%';`
-
-Select records starting with `[value]`: `SELECT * FROM [table] WHERE [column] LIKE '[value]%';`
-
-Select records starting with `val` and ending with `ue`: `SELECT * FROM [table] WHERE [column] LIKE '[val_ue]';`
-
-Select a range: `SELECT * FROM [table] WHERE [column] BETWEEN [value1] and [value2];`
-
-Select with custom order and only limit: `SELECT * FROM [table] WHERE [column] ORDER BY [column] ASC LIMIT [value];` (Order: `DESC`, `ASC`)
+|Sélectionner des enregistrements selon des paramètres|`SELECT * FROM [table] WHERE [column] = [value];` (Sélecteurs: `<`, `>`, `!=`; combiner plusieurs sélecteurs avec `AND` et `OR`)|
+|Sélectionner des enregistrements contenant `[value]`|`SELECT * FROM [table] WHERE [column] LIKE '%[value]%';`|
+|Sélectionner des enregistrements commençant par `[value]`|`SELECT * FROM [table] WHERE [column] LIKE '[value]%';`|
+|Sélectionner des enregistrements commençant par `val` et finissant par `ue`|`SELECT * FROM [table] WHERE [column] LIKE '[val_ue]';`|
+|Sélectionner des enregistrement selon un intervalle|`SELECT * FROM [table] WHERE [column] BETWEEN [value1] and [value2];`|
+|Sélectionner des enregistrement avec un ordre et une limite|`SELECT * FROM [table] WHERE [column] ORDER BY [column] ASC LIMIT [value];` (Ordre: `DESC`, `ASC`)|
+|Afficher par où passe une requête|`EXPLAIN SELECT * FROM [table];`|
