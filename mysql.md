@@ -55,6 +55,7 @@ Outils et logiciels :
 
 |Description|Commande|
 |-----------|--------|
+|Renommer une `[table]`|`ALTER TABLE [table] RENAME [new_name]`|
 |Sélectionner tous les enregistrements d'une table|`SELECT * FROM [table];`|
 |Sélectionner une partie des enregistrements|`SELECT [column], [another-column] FROM [table];`|
 |Modifier le nom d'une colonne sur la sélection|`SELECT [column] AS [custom-column] FROM [table];`|
