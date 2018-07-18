@@ -12,3 +12,15 @@ Cheat Sheets de différents langages de programmation
     - User : nom de la personne qui commit
 
 3. Mettre un message dans le commit expliquant les modifications effectuées
+
+#### REGLES DE MISE EN FORME
+
+[Documentation GitHub sur la syntaxe](https://help.github.com/articles/basic-writing-and-formatting-syntax/#section-links)
+
+\# LANGUAGE DE PROGRAMMATION (ex: MYSQL)
+
+\## Catégorie (ex: Commandes)
+
+\#### Section de la catégorie (ex: Accéder à une base de données)
+
+[Créer un tableau](https://help.github.com/articles/organizing-information-with-tables/)
