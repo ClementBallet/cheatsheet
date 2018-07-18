@@ -33,6 +33,14 @@ Outils et logiciels :
 |Importer une base de données (plus d'infos [ici](http://stackoverflow.com/a/21091197/1815847))|`mysql -u [username] -p -h localhost [database] < db_backup.sql`|
 |Se déconnecter du gestionnaire de base de données|`exit;`|
 
+### Fonctions utilisateur
+
+|Description|Commande|
+|-----------|--------|
+|Lister tous les utilisateurs|`SELECT User,Host FROM mysql.user;`|
+|Créer un nouvel utilisateur|`CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';`|
+|Donner tous les privilèges d'accés à un utilisateur pour toutes les tables \(\*\)|`GRANT ALL ON database.* TO 'user'@'localhost';`|
+
 ### Créer des éléments dans la base de données
 
 |Description|Commande|
@@ -83,3 +91,14 @@ Outils et logiciels :
 |Récupérer la valeur minimale dans `[column]`|`SELECT MIN([column]) FROM [table];`|
 |Récupérer la valeur moyenne dans `[column]`|`SELECT AVG([column]) FROM [table];`|
 |Récupérer l'arrondi à 2 chiffres de décimal de la valeur moyenne de `[column]` et grouper par `[category-column]`|`SELECT [category-column], ROUND(AVG([column]), 2) FROM [table] GROUP BY [category-column];`|
+
+### Requêtes avec plusieurs tables
+
+|Description|Commande|
+|-----------|--------|
+|Sélectionner des enregistrements de plusieurs tables|`SELECT [table1].[column], [table1].[another-column], [table2].[column] FROM [table1], [table2];`|
+|Sélectionner et combiner des enregistrements de plusieurs tables|`SELECT * FROM [table1] INNER JOIN [table2] ON [table1].[column] = [table2].[column];`|
+
+Combine rows from different tables but do not require the join condition: `SELECT * FROM [table1] LEFT OUTER JOIN [table2] ON [table1].[column] = [table2].[column];` (The left table is the first table that appears in the statement.)
+
+|Renommer une colonne ou une table en utilisant un _alias_|`SELECT [table1].[column] AS alias, [table2].[column] AS alias FROM [table1], [table2];`|
