@@ -97,8 +97,5 @@ Outils et logiciels :
 |Description|Commande|
 |-----------|--------|
 |Sélectionner des enregistrements de plusieurs tables|`SELECT [table1].[column], [table1].[another-column], [table2].[column] FROM [table1], [table2];`|
-|Sélectionner et combiner des enregistrements de plusieurs tables|`SELECT * FROM [table1] INNER JOIN [table2] ON [table1].[column] = [table2].[column];`|
-
-Combine rows from different tables but do not require the join condition: `SELECT * FROM [table1] LEFT OUTER JOIN [table2] ON [table1].[column] = [table2].[column];` (The left table is the first table that appears in the statement.)
-
+|Sélectionner et combiner des enregistrements de plusieurs tables|`SELECT * FROM [table1] INNER JOIN [table2] ON [table1].[column] = [table2].[column];` (Jointures: INNER JOIN, LEFT JOIN, RIGHT JOIN)|
 |Renommer une colonne ou une table en utilisant un _alias_|`SELECT [table1].[column] AS alias, [table2].[column] AS alias FROM [table1], [table2];`|
