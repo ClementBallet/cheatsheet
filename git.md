@@ -49,3 +49,17 @@
 |Annuler tous les commits après `[commit]`, en conservant les modifications localement|`git reset [commit]`|
 |Supprimer tout l'historique et les modifications effectuées après le commit spécifié|`git reset --hard [commit]`|
 |Revenir à un commit précis|`git revert [commit]`|
+
+#### Utiliser les branch
+
+|Description|Commande|
+|-----------|--------|
+|Lister toutes les branches locales dans le dépôt courant|`git branch`|
+|Créer une branche|`git branch [nom-de-branche]`|
+|Basculer sur la branche spécifiée et mettre à jour le répertoire de travail|`git checkout [nom-de-branche]`|
+|Créer et basculer sur la branche spécifiée|`git checkout -b [nom-de-branche]`|
+|Supprimer la branche spécifiée|`git branch -d [nom-de-branche]`|
+|Renommer une branche|`git branch -m [nom-de-branche] [nouveau-nom-de-branche]`|
+|Afficher la liste des branches qui ont été mergées|`git branch --merged`|
+|Supprimer les branches qui ont été mergées|`git branch -d [nom-de-branche]`|
+|Supprimer les branches qui n'ont pas été mergées|`git branch -D [nom-de-branche]`|
