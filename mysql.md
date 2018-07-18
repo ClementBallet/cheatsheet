@@ -61,7 +61,7 @@ Outils et logiciels :
 |Modifier le nom d'une colonne sur la sélection|`SELECT [column] AS [custom-column] FROM [table];`|
 |Compter le nombre d'enregistrements|`SELECT COUNT([column]) FROM [table];`|
 |Sélectionner, compter et regrouper des enregistrements|`SELECT *, (SELECT COUNT([column]) FROM [table]) AS count FROM [table] GROUP BY [column];`|
-|Sélectionner des enregistrements selon des paramètres|`SELECT * FROM [table] WHERE [column] = [value];` (Sélecteurs: `<`, `>`, `!= ou <>`; combiner plusieurs sélecteurs avec `AND` et `OR`)|
+|Sélectionner des enregistrements selon des paramètres|`SELECT * FROM [table] WHERE [column] = [value];` (Sélecteurs: `<`, `>`, `!=` ou `<>`; combiner plusieurs sélecteurs avec `AND` et `OR`)|
 |Sélectionner des enregistrements contenant `[value]`|`SELECT * FROM [table] WHERE [column] LIKE '%[value]%';`|
 |Sélectionner des enregistrements commençant par `[value]`|`SELECT * FROM [table] WHERE [column] LIKE '[value]%';`|
 |Sélectionner des enregistrements commençant par `val` et finissant par `ue`|`SELECT * FROM [table] WHERE [column] LIKE '[val_ue]';`|
