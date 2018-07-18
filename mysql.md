@@ -29,6 +29,9 @@ Outils et logiciels :
 |Lister les tables|`show tables;`|
 |Afficher la structure de la table|`describe [table];`|
 |Lister les index d'une table|`show index from [table];`|
+|Exporter une base de données (plus d'infos [ici](http://stackoverflow.com/a/21091197/1815847))|`mysqldump -u [username] -p [database] > db_backup.sql`|
+|Importer une base de données (plus d'infos [ici](http://stackoverflow.com/a/21091197/1815847))|`mysql -u [username] -p -h localhost [database] < db_backup.sql`|
+|Se déconnecter du gestionnaire de base de données|`exit;`|
 
 ### Créer des éléments dans la base de données
 
@@ -46,7 +49,8 @@ Outils et logiciels :
 |-----------|--------|
 |Sélectionner tous les enregistrements d'une table|`SELECT * FROM [table];`|
 |Sélectionner une partie des enregistrements|`SELECT [column], [another-column] FROM [table];`|
-|Compter le nombre d'enreegistrements|`SELECT COUNT([column]) FROM [table];`|
+|Modifier le nom d'une colonne sur la sélection|`SELECT [column] AS [custom-column] FROM [table];`|
+|Compter le nombre d'enregistrements|`SELECT COUNT([column]) FROM [table];`|
 |Sélectionner, compter et regrouper des enregistrements|`SELECT *, (SELECT COUNT([column]) FROM [table]) AS count FROM [table] GROUP BY [column];`|
 |Sélectionner des enregistrements selon des paramètres|`SELECT * FROM [table] WHERE [column] = [value];` (Sélecteurs: `<`, `>`, `!=`; combiner plusieurs sélecteurs avec `AND` et `OR`)|
 |Sélectionner des enregistrements contenant `[value]`|`SELECT * FROM [table] WHERE [column] LIKE '%[value]%';`|
@@ -63,7 +67,7 @@ Outils et logiciels :
 |-----------|--------|
 |Effacer des enregistrements|`DELETE FROM [table] WHERE [column] = [value];`|
 |Effacer tous les enregistrements d'une table sans effacer la table|`DELETE FROM [table];`|
-|Effacer tous les enregistrements d'une table|`truncate table [table];`|
+|Effacer tous les enregistrements d'une table|`TRUNCATE TABLE [table];`|
 |Supprimer les colonnes d'une table|`ALTER TABLE [table] DROP COLUMN [column];`|
 |Supprimer une table|`DROP TABLE [table];`|
 |Supprimer une base de données|`DROP DATABASE [database];`|
