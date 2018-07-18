@@ -71,3 +71,15 @@ Outils et logiciels :
 |Supprimer les colonnes d'une table|`ALTER TABLE [table] DROP COLUMN [column];`|
 |Supprimer une table|`DROP TABLE [table];`|
 |Supprimer une base de données|`DROP DATABASE [database];`|
+
+### Fonctions d'agrégation
+
+|Description|Commande|
+|-----------|--------|
+|Sélectionner des enregistrements sans doublons|`SELECT distinct name, email, acception FROM owners WHERE acception = 1 AND date >= 2015-01-01 00:00:00`|
+|Calculer la somme des données des enregistrements|`SELECT SUM([column]) FROM [table];`|
+|Calculer la somme des données de `[column]` et grouper par `[category-column]`|`SELECT [category-column], SUM([column]) FROM [table] GROUP BY [category-column];`|
+|Récupérer la valeur maximale dans `[column]`|`SELECT MAX([column]) FROM [table];`|
+|Récupérer la valeur minimale dans `[column]`|`SELECT MIN([column]) FROM [table];`|
+|Récupérer la valeur moyenne dans `[column]`|`SELECT AVG([column]) FROM [table];`|
+|Récupérer l'arrondi à 2 chiffres de décimal de la valeur moyenne de `[column]` et grouper par `[category-column]`|`SELECT [category-column], ROUND(AVG([column]), 2) FROM [table] GROUP BY [category-column];`|
