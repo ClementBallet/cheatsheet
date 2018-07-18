@@ -58,3 +58,12 @@ Outils et logiciels :
 |Changer des enregistrement|`UPDATE [table] SET [column] = '[updated-value]' WHERE [column] = [value];`|
 
 ### Supprimer des éléments de la base de données
+
+|Description|Commande|
+|-----------|--------|
+|Effacer des enregistrements|`DELETE FROM [table] WHERE [column] = [value];`|
+|Effacer tous les enregistrements d'une table sans effacer la table|`DELETE FROM [table];`|
+|Effacer tous les enregistrements d'une table|`truncate table [table];`|
+|Supprimer les colonnes d'une table|`ALTER TABLE [table] DROP COLUMN [column];`|
+|Supprimer une table|`DROP TABLE [table];`|
+|Supprimer une base de données|`DROP DATABASE [database];`|
