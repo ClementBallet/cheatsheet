@@ -42,7 +42,6 @@ Outils et logiciels :
 
 ### Manipuler la base de données
 
-
 |Description|Commande|
 |-----------|--------|
 |Sélectionner tous les enregistrements d'une table|`SELECT * FROM [table];`|
@@ -56,3 +55,6 @@ Outils et logiciels :
 |Sélectionner des enregistrement selon un intervalle|`SELECT * FROM [table] WHERE [column] BETWEEN [value1] and [value2];`|
 |Sélectionner des enregistrement avec un ordre et une limite|`SELECT * FROM [table] WHERE [column] ORDER BY [column] ASC LIMIT [value];` (Ordre: `DESC`, `ASC`)|
 |Afficher par où passe une requête|`EXPLAIN SELECT * FROM [table];`|
+|Changer des enregistrement|`UPDATE [table] SET [column] = '[updated-value]' WHERE [column] = [value];`|
+
+### Supprimer des éléments de la base de données
