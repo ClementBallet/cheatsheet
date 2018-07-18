@@ -70,6 +70,16 @@
 |Afficher la liste des branches qui ont été mergées|`git branch --merged`|
 |Supprimer les branches qui n'ont pas été mergées|`git branch -D [nom-de-branche]`|
 
+#### Mettre en suspens des modifications non finies pour y revenir plus tard
+
+|Description|Commande|
+|-----------|--------|
+|Enregistrer de manière temporaire tous les fichiers sous suivi de version qui ont été modifiés ("remiser son travail")|`git stash "[message descriptif]"`|
+|Appliquer une remise et la supprime immédiatement|`git stash pop`|
+|Lister toutes les remises|`git stash list`|
+|Supprimer la remise la plus récente|`git stash drop`|
+|Supprimer toutes les remises|`git stash clear`|
+
 
 #### Utiliser la fonction merge
 
@@ -99,4 +109,4 @@
 |Description|Commande|
 |-----------|--------|
 |Un fichier texte nommé `.gitignore` permet d'éviter le suivi de version accidentel pour les fichiers et chemins correspondant aux patterns spécifiés|`*.log build/ temp-*`|
-|Lister tous les fichiers exclus du suivi de version dans ce projet|`git ls-files --other --ignored --exclude-standard`|
+|Lister tous les fichiers exclus du suivi de version dans le projet|`git ls-files --other --ignored --exclude-standard`|
