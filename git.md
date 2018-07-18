@@ -27,8 +27,10 @@
 
 |Description|Commande|
 |-----------|--------|
-|Crée un dépôt local à partir du nom spécifié|`git init [nom-du-projet]`|
-|Télécharge un projet et tout son historique de versions|`git clone [url]`|
+|Créer un dépôt local à partir du nom spécifié|`git init [nom-du-projet]`|
+|Télécharger un projet et tout son historique de versions|`git clone [url]`|
+|Télécharger un projet et tout son historique de versions vers un dossier spécifique|`git clone [url] [path]`|
+|Télécharger une branche spécifique|`git clone -b [nom-de-branche] [url]`|
 
 
 #### Faire des changements (add, commit, reset, remove)
@@ -46,6 +48,16 @@
 |Supprimer le fichier du répertoire de travail et met à jour l'index|`git rm [file]`|
 |Supprimer le fichier du système de suivi de version mais le préserve localement|`git rm --cached [fichier]`| 
 |Renommer le fichier et préparer le changement pour un commit |`git mv [fichier-nom] [fichier-nouveau-nom]`|
+
+
+#### Référencer un dépôt distant et synchroniser l'historique de versions
+
+|Description|Commande|
+|-----------|--------|
+|Récupèrer tout l'historique du dépôt nommé|`git fetch [nom-de-depot]`|
+|Envoyer tous les commits de la branche locale vers GitHub|`git push origin [nom-de-branche]`|
+|Envoyer tous les commits avec push-force|`git push origin [nom-de-branche] --force`|
+|Récupèrer tout l'historique du dépôt nommé et incorpore les modifications|`git pull origin [nom-de-branche]`|
 
 
 #### Corriger des erreurs et gérer l'historique des corrections
@@ -70,6 +82,7 @@
 |Afficher la liste des branches qui ont été mergées|`git branch --merged`|
 |Supprimer les branches qui n'ont pas été mergées|`git branch -D [nom-de-branche]`|
 
+
 #### Mettre en suspens des modifications non finies pour y revenir plus tard
 
 |Description|Commande|
@@ -89,6 +102,22 @@
 |Arrêter le merge en cas de conflits|`git merge --abort`|
 
 
+#### Utiliser la fonction tag
+
+|Description|Commande|
+|-----------|--------|
+|Afficher toutes les versions released|`git tag`|
+|Créer une version release|`git tag v1.0.0`|
+|Créer une version release avec un commentaire|`git tag -a v1.0.0 -m "[message descriptif]"`|
+
+
+#### Utiliser la fonction diff
+
+|Description|Commande|
+|-----------|--------|
+|
+
+
 #### Vérifier l'historique des versions
 
 |Description|Commande|
@@ -104,9 +133,16 @@
 |Afficher les différences de contenu entre deux branches|`git diff [premiere-branche]...[deuxieme-branche]`|
 |Afficher les modifications de métadonnées et de contenu inclues dans le commit spécifié|`git show [commit]`|
 
+
 #### Exclure des fichiers et chemins temporaires
 
 |Description|Commande|
 |-----------|--------|
 |Un fichier texte nommé `.gitignore` permet d'éviter le suivi de version accidentel pour les fichiers et chemins correspondant aux patterns spécifiés|`*.log build/ temp-*`|
 |Lister tous les fichiers exclus du suivi de version dans le projet|`git ls-files --other --ignored --exclude-standard`|
+
+#### Sauvegarder le projet dans une archive
+
+|Description|Commande|
+|-----------|--------|
+|Créer une archive zip|`git archive --format zip --output filename.zip master`|
