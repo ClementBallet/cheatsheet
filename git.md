@@ -61,5 +61,4 @@
 |Supprimer la branche spécifiée|`git branch -d [nom-de-branche]`|
 |Renommer une branche|`git branch -m [nom-de-branche] [nouveau-nom-de-branche]`|
 |Afficher la liste des branches qui ont été mergées|`git branch --merged`|
-|Supprimer les branches qui ont été mergées|`git branch -d [nom-de-branche]`|
 |Supprimer les branches qui n'ont pas été mergées|`git branch -D [nom-de-branche]`|
