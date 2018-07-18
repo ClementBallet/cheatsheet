@@ -61,7 +61,7 @@ Outils et logiciels :
 |Modifier le nom d'une colonne sur la sélection|`SELECT [column] AS [custom-column] FROM [table];`|
 |Compter le nombre d'enregistrements|`SELECT COUNT([column]) FROM [table];`|
 |Sélectionner, compter et regrouper des enregistrements|`SELECT *, (SELECT COUNT([column]) FROM [table]) AS count FROM [table] GROUP BY [column];`|
-|Sélectionner des enregistrements selon des paramètres|`SELECT * FROM [table] WHERE [column] = [value];` (Sélecteurs: `<`, `>`, `!=`; combiner plusieurs sélecteurs avec `AND` et `OR`)|
+|Sélectionner des enregistrements selon des paramètres|`SELECT * FROM [table] WHERE [column] = [value];` (Sélecteurs: `<`, `>`, `!= ou <>`; combiner plusieurs sélecteurs avec `AND` et `OR`)|
 |Sélectionner des enregistrements contenant `[value]`|`SELECT * FROM [table] WHERE [column] LIKE '%[value]%';`|
 |Sélectionner des enregistrements commençant par `[value]`|`SELECT * FROM [table] WHERE [column] LIKE '[value]%';`|
 |Sélectionner des enregistrements commençant par `val` et finissant par `ue`|`SELECT * FROM [table] WHERE [column] LIKE '[val_ue]';`|
@@ -98,5 +98,5 @@ Outils et logiciels :
 |Description|Commande|
 |-----------|--------|
 |Sélectionner des enregistrements de plusieurs tables|`SELECT [table1].[column], [table1].[another-column], [table2].[column] FROM [table1], [table2];`|
-|Sélectionner et combiner des enregistrements de plusieurs tables|`SELECT * FROM [table1] INNER JOIN [table2] ON [table1].[column] = [table2].[column];` (Jointures: INNER JOIN, LEFT JOIN, RIGHT JOIN)|
-|Renommer une colonne ou une table en utilisant un _alias_|`SELECT [table1].[column] AS alias, [table2].[column] AS alias FROM [table1], [table2];`|
+|Sélectionner et combiner des enregistrements de plusieurs tables|`SELECT * FROM [table1] INNER JOIN [table2] ON [table1].[column] = [table2].[column];` (Jointures: INNER JOIN, LEFT JOIN, RIGHT JOIN, CROSS JOIN)|
+|Renommer une colonne ou une table en utilisant un _alias_|`SELECT aliasT1.[column] AS alias, aliasT2.[column] AS alias FROM [table1] aliasT1, [table2] aliasT2;`|
