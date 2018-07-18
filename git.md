@@ -26,8 +26,20 @@
 |Crée un dépôt local à partir du nom spécifié|`git init [nom-du-projet]`|
 |Télécharge un projet et tout son historique de versions|`git clone [url]`|
 
-#### Faire des commits
+#### Faire des changements (add, commit, reset, remove)
 
 |Description|Commande|
 |-----------|--------|
+|Lister tous les nouveaux fichiers et les fichiers modifiés à commiter|`git status`|
+|Afficher les modifications de fichiers locaux qui ne sont pas encore indexées (pas ajoutés pour le versionnage)|`git diff`|
+|Ajouter un fichier, en préparation pour le versionnage|`git add [fichier]`|
+|Ajouter tous les fichiers, en préparation pour le versionnage|`git add .`|
+|Afficher les différences de fichier entre la version indexée et la dernière version du dépôt git|`git diff --staged`|
+|Enlever le fichier de l'index de versionnage, mais conserver son contenu|`git reset [fichier]`|
+|Faire un commit avec un message|`git commit -m "[message descriptif]"`|
+|Ajouter et faire un commit en une commande|`git commit -am "[message descriptif]"`|
+|Supprimer le fichier du répertoire de travail et met à jour l'index|`git rm [file]`|
+|Supprimer le fichier du système de suivi de version mais le préserve localement|`git rm --cached [fichier]`| 
+|Renommer le fichier et préparer le changement pour un commit |`git mv [fichier-nom] [fichier-nouveau-nom]`|
+
 
