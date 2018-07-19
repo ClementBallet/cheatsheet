@@ -108,3 +108,12 @@ Outils et logiciels :
 |-----------|--------|
 |Créer une vue|`CREATE OR REPLACE VIEW [nom-de-la-vue] AS [Code-à-éxecuter]`|
 |Afficher le code de la vue|`SHOW CREATE VIEW [nom-de-la-vue]`|
+
+
+### Créer un trigger
+
+|Description|Commande|
+|-----------|--------|
+|Créer un trigger|`CREATE TRIGGER [nom-du-trigger] [moment-du-déclenchement] [evenement-trigger] ON [nom-table] FOR EACH ROW [code-à-exécuter]`|
+|Paramètres|[moment-du-déclenchement] `BEFORE` ou `AFTER` // [evenement-trigger] `INSERT`, `UPDATE` ou `DELETE`|
+|Récupérer les enregistrements du trigger|`NEW.[nom-de-la-colonne]` ou `OLD.[nom-de-la-colonne]`|
