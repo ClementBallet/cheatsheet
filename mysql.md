@@ -100,3 +100,11 @@ Outils et logiciels :
 |Sélectionner des enregistrements de plusieurs tables|`SELECT [table1].[column], [table1].[another-column], [table2].[column] FROM [table1], [table2];`|
 |Sélectionner et combiner des enregistrements de plusieurs tables|`SELECT * FROM [table1] INNER JOIN [table2] ON [table1].[column] = [table2].[column];` (Jointures: INNER JOIN, LEFT JOIN, RIGHT JOIN, CROSS JOIN)|
 |Renommer une colonne ou une table en utilisant un _alias_|`SELECT aliasT1.[column] AS alias, aliasT2.[column] AS alias FROM [table1] aliasT1, [table2] aliasT2;`|
+
+
+### Créer une vue
+
+|Description|Commande|
+|-----------|--------|
+|Créer une vue|`CREATE OR REPLACE VIEW [nom-de-la-vue] AS [Code-à-éxecuter]`|
+|Afficher le code de la vue|`SHOW CREATE VIEW [nom-de-la-vue]`|
