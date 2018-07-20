@@ -18,7 +18,6 @@ Permettre la compilation à chaque changement du fichier sass
 
 ```
 npm run watch
-
 ```
 Puis CTRL+C pour sortir de la compilation à la fin
 
