@@ -15,7 +15,7 @@ Cheat Sheets de différents langages de programmation
 
 #### REGLES DE MISE EN FORME
 
-[Documentation GitHub sur la syntaxe](https://help.github.com/articles/basic-writing-and-formatting-syntax/#section-links)
+[Documentation GitHub sur la syntaxe](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 
 \# LANGUAGE DE PROGRAMMATION (ex: MYSQL)
 
