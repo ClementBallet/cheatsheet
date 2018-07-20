@@ -21,6 +21,6 @@ Cheat Sheets de différents langages de programmation
 
 \## Catégorie (ex: Commandes)
 
-\#### Section de la catégorie (ex: Accéder à une base de données)
+\### Section de la catégorie (ex: Accéder à une base de données)
 
 [Créer un tableau](https://help.github.com/articles/organizing-information-with-tables/)
