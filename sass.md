@@ -4,7 +4,7 @@
 
 ## Installation
 
-#### Projet Laravel
+### Projet Laravel
 
 **Nécessite Node.js**
 
