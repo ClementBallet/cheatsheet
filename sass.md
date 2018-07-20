@@ -6,7 +6,7 @@
 
 #### Projet Laravel
 
-    **Nécessite Node.js**
+**Nécessite Node.js**
 
 Se déplacer dans le dossier du projet et rentrer cette commande afin d'installer les dépendances pour le projet
 
