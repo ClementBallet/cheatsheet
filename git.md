@@ -15,7 +15,7 @@
 
 |Description|Commande|
 |-----------|--------|
-|Savoir dans quel dossier git se stitue|```git which git```|
+|Savoir dans quel dossier git se stitue|`which git`|
 |Connaître la version de git installée|`git --version`|
 |Créer un alias (raccourci) pour `git status`|`git config --global alias.st status`|
 |Définir le nom que vous voulez associer à tous vos commits|`git config --global user.name "[nom]"`|
