@@ -16,7 +16,7 @@ Outils et logiciels :
 ## Commandes
 
 
-#### Accéder à la base de données
+### Accéder à la base de données
 
 |Description|Commande|
 |-----------|--------|
@@ -33,7 +33,7 @@ Outils et logiciels :
 |Importer une base de données (plus d'infos [ici](http://stackoverflow.com/a/21091197/1815847))|`mysql -u [username] -p -h localhost [database] < db_backup.sql`|
 |Se déconnecter du gestionnaire de base de données|`exit;`|
 
-#### Fonctions utilisateur
+### Fonctions utilisateur
 
 |Description|Commande|
 |-----------|--------|
@@ -41,7 +41,7 @@ Outils et logiciels :
 |Créer un nouvel utilisateur|`CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';`|
 |Donner tous les privilèges d'accés à un utilisateur pour toutes les tables \(\*\)|`GRANT ALL ON database.* TO 'user'@'localhost';`|
 
-#### Créer des éléments dans la base de données
+### Créer des éléments dans la base de données
 
 |Description|Commande|
 |-----------|--------|
@@ -51,7 +51,7 @@ Outils et logiciels :
 |Insérer un enregistrement|`INSERT INTO [table] ([column], [column]) VALUES ('[value]', '[value]');`|
 |Fonction MySQL pour ajouter la date et l'heure dans l'enregistrement|`NOW()`|
 
-#### Manipuler la base de données
+### Manipuler la base de données
 
 |Description|Commande|
 |-----------|--------|
@@ -70,7 +70,7 @@ Outils et logiciels :
 |Afficher par où passe une requête|`EXPLAIN SELECT * FROM [table];`|
 |Changer des enregistrement|`UPDATE [table] SET [column] = '[updated-value]' WHERE [column] = [value];`|
 
-#### Supprimer des éléments de la base de données
+### Supprimer des éléments de la base de données
 
 |Description|Commande|
 |-----------|--------|
@@ -81,7 +81,7 @@ Outils et logiciels :
 |Supprimer une table|`DROP TABLE [table];`|
 |Supprimer une base de données|`DROP DATABASE [database];`|
 
-#### Fonctions d'agrégation
+### Fonctions d'agrégation
 
 |Description|Commande|
 |-----------|--------|
@@ -93,7 +93,7 @@ Outils et logiciels :
 |Récupérer la valeur moyenne dans `[column]`|`SELECT AVG([column]) FROM [table];`|
 |Récupérer l'arrondi à 2 chiffres de décimal de la valeur moyenne de `[column]` et grouper par `[category-column]`|`SELECT [category-column], ROUND(AVG([column]), 2) FROM [table] GROUP BY [category-column];`|
 
-#### Requêtes avec plusieurs tables
+### Requêtes avec plusieurs tables
 
 |Description|Commande|
 |-----------|--------|
@@ -102,7 +102,7 @@ Outils et logiciels :
 |Renommer une colonne ou une table en utilisant un _alias_|`SELECT aliasT1.[column] AS alias, aliasT2.[column] AS alias FROM [table1] aliasT1, [table2] aliasT2;`|
 
 
-#### Créer une vue
+### Créer une vue
 
 |Description|Commande|
 |-----------|--------|
@@ -110,7 +110,7 @@ Outils et logiciels :
 |Afficher le code de la vue|`SHOW CREATE VIEW [nom-de-la-vue]`|
 
 
-#### Créer un trigger
+### Créer un trigger
 
 |Description|Commande|
 |-----------|--------|

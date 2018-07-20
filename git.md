@@ -11,7 +11,7 @@
 ## Commandes
 
 
-#### Configuration
+### Configuration
 
 |Description|Commande|
 |-----------|--------|
@@ -23,7 +23,7 @@
 |Activer la colorisation de la sortie en ligne de commande|`git config --global color.ui auto`|
 
 
-#### Créer un dépôt
+### Créer un dépôt
 
 |Description|Commande|
 |-----------|--------|
@@ -33,7 +33,7 @@
 |Télécharger une branche spécifique|`git clone -b [nom-de-branche] [url]`|
 
 
-#### Faire des changements (add, commit, reset, remove)
+### Faire des changements (add, commit, reset, remove)
 
 |Description|Commande|
 |-----------|--------|
@@ -50,7 +50,7 @@
 |Renommer le fichier et préparer le changement pour un commit |`git mv [fichier-nom] [fichier-nouveau-nom]`|
 
 
-#### Référencer un dépôt distant et synchroniser l'historique de versions
+### Référencer un dépôt distant et synchroniser l'historique de versions
 
 |Description|Commande|
 |-----------|--------|
@@ -60,7 +60,7 @@
 |Récupèrer tout l'historique du dépôt nommé et incorpore les modifications|`git pull origin [nom-de-branche]`|
 
 
-#### Corriger des erreurs et gérer l'historique des corrections
+### Corriger des erreurs et gérer l'historique des corrections
 
 |Description|Commande|
 |-----------|--------|
@@ -69,7 +69,7 @@
 |Revenir à un commit précis|`git revert [commit]`|
 
 
-#### Utiliser les branches
+### Utiliser les branches
 
 |Description|Commande|
 |-----------|--------|
@@ -83,7 +83,7 @@
 |Supprimer les branches qui n'ont pas été mergées|`git branch -D [nom-de-branche]`|
 
 
-#### Mettre en suspens des modifications non finies pour y revenir plus tard
+### Mettre en suspens des modifications non finies pour y revenir plus tard
 
 |Description|Commande|
 |-----------|--------|
@@ -94,7 +94,7 @@
 |Supprimer toutes les remises|`git stash clear`|
 
 
-#### Utiliser la fonction merge
+### Utiliser la fonction merge
 
 |Description|Commande|
 |-----------|--------|
@@ -102,7 +102,7 @@
 |Arrêter le merge en cas de conflits|`git merge --abort`|
 
 
-#### Utiliser la fonction tag
+### Utiliser la fonction tag
 
 |Description|Commande|
 |-----------|--------|
@@ -111,14 +111,14 @@
 |Créer une version release avec un commentaire|`git tag -a v1.0.0 -m "[message descriptif]"`|
 
 
-#### Utiliser la fonction diff
+### Utiliser la fonction diff
 
 |Description|Commande|
 |-----------|--------|
 |
 
 
-#### Vérifier l'historique des versions
+### Vérifier l'historique des versions
 
 |Description|Commande|
 |-----------|--------|
@@ -134,14 +134,14 @@
 |Afficher les modifications de métadonnées et de contenu inclues dans le commit spécifié|`git show [commit]`|
 
 
-#### Exclure des fichiers et chemins temporaires
+### Exclure des fichiers et chemins temporaires
 
 |Description|Commande|
 |-----------|--------|
 |Un fichier texte nommé `.gitignore` permet d'éviter le suivi de version accidentel pour les fichiers et chemins correspondant aux patterns spécifiés|`*.log build/ temp-*`|
 |Lister tous les fichiers exclus du suivi de version dans le projet|`git ls-files --other --ignored --exclude-standard`|
 
-#### Sauvegarder le projet dans une archive
+### Sauvegarder le projet dans une archive
 
 |Description|Commande|
 |-----------|--------|
