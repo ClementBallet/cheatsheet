@@ -55,9 +55,9 @@
 |Description|Commande|
 |-----------|--------|
 |Récupèrer tout l'historique du dépôt nommé|`git fetch [nom-de-depot]`|
-|Envoyer tous les commits de la branche locale vers GitHub|`git push origin [nom-de-branche]`|
-|Envoyer tous les commits avec push-force|`git push origin [nom-de-branche] --force`|
-|Récupèrer tout l'historique du dépôt nommé et incorpore les modifications|`git pull origin [nom-de-branche]`|
+|Envoyer tous les commits de la branche locale vers GitHub|`git push [nom-de-la-remote] [nom-de-branche]`|
+|Envoyer tous les commits avec push-force|`git push [nom-de-la-remote] [nom-de-branche] --force`|
+|Récupèrer tout l'historique du dépôt nommé et incorpore les modifications|`git pull [nom-de-la-remote] [nom-de-branche]`|
 
 
 ### Corriger des erreurs et gérer l'historique des corrections
